@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    /* overflow-x: hidden; */
+    background: #e5e5e5; 
+}
+
+h2 {
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-weight: bold;
+    line-height: 3.25rem;
+}
+
+p {
+    font-size: 13.25px;
+    line-height: 1.3rem;
+    font-weight: 400;
+}
+
+span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.body-container {
+    margin: 7rem 2.5rem;
+    padding-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 25% 38% 37%;
+    height: 70%;
+    width: 90%;
+    gap: 2rem;
+}
+
+.content-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-one-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+} 
+
+.arrow {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    height: 60px;
+    width: 6px;
+}
+
+.arrow::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: -2px;
+}
+
+/* =============== CONTENT TWO ==================== */
+.content-two-text {
+    margin-bottom: 3.5rem;
+}
+.conversion-boxes {
+    background: #1c1c1c;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: auto;
+    height: 65%;
+    padding: 1.5rem;
+}
+
+.conversion-box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box-head {
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    color: #fff;
+    height: 40%;
+    padding: 10%;
+}
+
+.box-body {
+    height: 60%;
+}
+
+.light .box-body {
+    background: #fff;
+}
+
+.dark .box-body {
+    background: #1F2937;
+    color: #fff;
+}
+
+.box-title {
+    font-weight: 800;
+    font-size: 11px;
+}
+
+.box-body p {
+    font-size: 7px;
+}
+
+.sub-title {
+    font-weight: bold;
+}
+
+/* ====================== CONTENT THREE ============================ */
+.content-three-text {
+    margin-bottom: 1rem;
+}
+
+.gradient-boxes {
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.gradient-box {
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gradient-color {
+    border-radius: 5px;
+}
+
+.color-box {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 10%;
+}
+
+.color-box div{
+    color: #fff;
+    background: green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Arrow 1 */
+
+/* box-sizing: border-box;
+
+position: absolute;
+width: 120px;
+height: 0px;
+
+border: 3px solid #000000;
+transform: rotate(90deg); */
+
+.box-one .gradient-color {
+
+background: linear-gradient(246.26deg, #2B75EC 0%, #2EC4DE 100%);
+}
+
+.box-one .color-one {
+    background: #2B75EC;
+}
+
+.box-one .color-two {
+    background: #2EC4DE;
+}
+
+
+
+.box-two .gradient-color {
+
+    background: linear-gradient(246.26deg, #05795A 0%, #10B680 100%);
+}
+    
+.box-two .color-one {
+    background: #05795A;
+}
+    
+.box-two .color-two {
+    background: #10B680;
+}
+
+
+
+.box-three .gradient-color {
+
+    background: linear-gradient(246.26deg, #ED4880 0%, #F38B17 100%);
+}
+    
+.box-three .color-one {
+    background: #ED4880;
+}
+    
+.box-three .color-two {
+    background: #F38B17;
+}
+
+
+
+.box-four .gradient-color {
+
+    background: linear-gradient(246.26deg, #18244A 0%, #3B69E1 100%);
+}
+    
+.box-four .color-one {
+    background: #18244A;
+}
+    
+.box-four .color-two {
+    background: #3B69E1;
+}
