@@ -97,7 +97,21 @@ a {
 .content-two-text {
     margin-bottom: 3.5rem;
 }
+
+/* Found a better way to adjust my conversion box grid items */
+
 .conversion-boxes {
+    background: #1c1c1c;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 46.5% 46.5%;
+    grid-gap: 1.5rem;
+    padding: 1.4rem;
+}
+
+
+/* .conversion-boxes {
     background: #1c1c1c;
     text-align: center;
     display: grid;
@@ -111,7 +125,7 @@ a {
 .conversion-box {
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 .box-head {
@@ -257,4 +271,69 @@ background: linear-gradient(246.26deg, #2B75EC 0%, #2EC4DE 100%);
     
 .box-four .color-two {
     background: #3B69E1;
+}
+
+
+/* Added media queries to make the UI optimizable for smaller devices  */
+
+/* =========== MEDIA QUERIES ============== */
+
+@media  screen and (max-width:1023px) {
+    .body-container {
+        display: flex;
+        flex-direction: column;
+        margin: 7rem auto;
+    }
+
+    h2 {
+        font-weight: bold;
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-weight: bold;
+        line-height: 3.25rem;
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 400;
+    }
+    
+    span {
+        font-style: italic;
+        font-weight: 600;
+    }
+    
+    img {
+        width: 60%;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* ========= CONTENT ONE ========== */
+
+    .content-one-image {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* ========= CONTENT TWO ========== */
+    .box-title {
+        font-size: 0.8rem;
+    }
+
+    .box-body p {
+        font-size: 0.6rem;
+    }
+
+    /* ============= CONTENT THREE ================ */
+    
+    .gradient-box {
+        height: 15%;
+    }
 }
